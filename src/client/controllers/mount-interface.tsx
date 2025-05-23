@@ -7,7 +7,7 @@ import { Events } from "client/network";
 
 @Controller()
 export class NetworkTest implements OnStart {
-	PlayerGui = Players.LocalPlayer.WaitForChild("PlayerGui");
+	playerGui = Players.LocalPlayer.WaitForChild("PlayerGui");
 
 	onStart(): void {
 		Events.event.connect((arg1: string) => {
@@ -20,7 +20,7 @@ export class NetworkTest implements OnStart {
 				<StrictMode>
 					<App />
 				</StrictMode>,
-				this.PlayerGui,
+				this.playerGui,
 			),
 		);
 	}
