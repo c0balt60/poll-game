@@ -4,3 +4,4 @@
 
 export * from "./primitive";
 export * from "./utils";
+export * from "./components";
