@@ -1,8 +1,6 @@
 import React, { forwardRef } from "@rbxts/react";
 
-// Disabled eslint code
-// eslin-disable-next-line @ typescript-eslint/no-empty-object-type
-interface GroupProps extends React.PropsWithChildren {}
+type GroupProps = React.PropsWithChildren;
 
 const Group = forwardRef(({ children }: Readonly<GroupProps>, ref: React.Ref<Frame>) => {
 	return (

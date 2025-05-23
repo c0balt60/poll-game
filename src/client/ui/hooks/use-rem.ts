@@ -1,6 +1,5 @@
+import { DEFAULT_REM, RemContext } from "client/ui/provider/rem-provider";
 import { useCallback, useContext } from "@rbxts/react";
-
-import { DEFAULT_REM, RemContext } from "../provider/rem-provider";
 
 export interface RemOptions {
 	minimum?: number;
