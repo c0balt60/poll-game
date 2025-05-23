@@ -15,7 +15,8 @@
 		"roblox-ts",
 		"prettier",
 		"unused-imports",
-		"jsx-a11y"
+		"jsx-a11y",
+		"no-relative-import-paths"
 	],
 	"extends": [
 		"eslint:recommended",
@@ -193,6 +194,7 @@
 		"no-restricted-imports": [
 			"error",
 			{
+			  "allowSameFolder": true,
 			  "patterns": [
 				{
 				  "group": ["./", "../"],
@@ -200,6 +202,10 @@
 				}
 			  ]
 			}
+		],
+		"no-relative-import-paths/no-relative-import-paths": [
+			"error",
+			{ "allowSameFolder": true }
 		]
 	},
 	"overrides": [
