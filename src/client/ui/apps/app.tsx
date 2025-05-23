@@ -1,12 +1,13 @@
+import Layer from "client/ui/components/primitive/layer";
 import React from "@rbxts/react";
 
-import Layer from "../components/widgets/layer";
-import { Menu } from "./menu";
+// eslint-disable-next-line no-restricted-imports
+import { CreatePoll } from "./create-poll";
 
 export function App() {
 	return (
 		<Layer>
-			<Menu />
+			<CreatePoll />
 		</Layer>
 	);
 }
